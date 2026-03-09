@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0c060"/>
+      <stop offset="100%" stop-color="#d4a04a"/>
+    </radialGradient>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0a0e17"/>
+    </radialGradient>
+    <linearGradient id="pent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9944a"/>
+      <stop offset="100%" stop-color="#a07030"/>
+    </linearGradient>
+    <linearGradient id="mack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a7a6b"/>
+      <stop offset="100%" stop-color="#2d5a4a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="url(#bg)"/>
+
+  <!-- Outer ring — pentlandite (proton barrier) -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#pent)" stroke-width="32" opacity="0.8"/>
+
+  <!-- Middle ring — mackinawite (catalyst) -->
+  <circle cx="256" cy="256" r="148" fill="none" stroke="url(#mack)" stroke-width="24" opacity="0.85"/>
+
+  <!-- Inner glow — autocatalytic core -->
+  <circle cx="256" cy="256" r="100" fill="url(#core)" opacity="0.15"/>
+  <circle cx="256" cy="256" r="70" fill="url(#core)" opacity="0.25"/>
+  <circle cx="256" cy="256" r="40" fill="url(#core)" opacity="0.9"/>
+
+  <!-- Flow arrows — electron/proton paths (stylized dots) -->
+  <!-- Top arc -->
+  <circle cx="256" cy="44" r="6" fill="#d4a04a" opacity="0.7"/>
+  <circle cx="310" cy="52" r="4" fill="#d4a04a" opacity="0.5"/>
+  <circle cx="202" cy="52" r="4" fill="#d4a04a" opacity="0.5"/>
+
+  <!-- Bottom arc -->
+  <circle cx="256" cy="468" r="6" fill="#d4a04a" opacity="0.7"/>
+  <circle cx="310" cy="460" r="4" fill="#d4a04a" opacity="0.5"/>
+  <circle cx="202" cy="460" r="4" fill="#d4a04a" opacity="0.5"/>
+
+  <!-- Left arc -->
+  <circle cx="44" cy="256" r="6" fill="#4a7a6b" opacity="0.7"/>
+  <circle cx="52" cy="202" r="4" fill="#4a7a6b" opacity="0.5"/>
+  <circle cx="52" cy="310" r="4" fill="#4a7a6b" opacity="0.5"/>
+
+  <!-- Right arc -->
+  <circle cx="468" cy="256" r="6" fill="#4a7a6b" opacity="0.7"/>
+  <circle cx="460" cy="202" r="4" fill="#4a7a6b" opacity="0.5"/>
+  <circle cx="460" cy="310" r="4" fill="#4a7a6b" opacity="0.5"/>
+
+  <!-- Center symbol — stylized "E" for Exopoiesis -->
+  <text x="256" y="272" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="#d4a04a" opacity="0.95">E</text>
+</svg>
