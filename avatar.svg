@@ -8,51 +8,68 @@
       <stop offset="0%" stop-color="#111827"/>
       <stop offset="100%" stop-color="#0a0e17"/>
     </radialGradient>
-    <linearGradient id="pent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#c9944a"/>
-      <stop offset="100%" stop-color="#a07030"/>
-    </linearGradient>
-    <linearGradient id="mack" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4a7a6b"/>
-      <stop offset="100%" stop-color="#2d5a4a"/>
-    </linearGradient>
+    <!-- Planet gradients -->
+    <radialGradient id="earth" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#5cb85c"/>
+      <stop offset="100%" stop-color="#2d7a2d"/>
+    </radialGradient>
+    <radialGradient id="mars" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#e05040"/>
+      <stop offset="100%" stop-color="#a02820"/>
+    </radialGradient>
+    <radialGradient id="venus" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#60a0d0"/>
+      <stop offset="100%" stop-color="#305880"/>
+    </radialGradient>
+    <radialGradient id="mercury" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#c0b8a8"/>
+      <stop offset="100%" stop-color="#807868"/>
+    </radialGradient>
+    <radialGradient id="jupiter" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#e0b070"/>
+      <stop offset="50%" stop-color="#c08040"/>
+      <stop offset="100%" stop-color="#906030"/>
+    </radialGradient>
   </defs>
 
-  <!-- Background -->
+  <!-- Background — transparent for PNG, dark rect for web preview -->
   <rect width="512" height="512" rx="64" fill="url(#bg)"/>
 
-  <!-- Outer ring — pentlandite (proton barrier) -->
-  <circle cx="256" cy="256" r="200" fill="none" stroke="url(#pent)" stroke-width="32" opacity="0.8"/>
+  <!-- Orbits (thin, subtle) -->
+  <circle cx="256" cy="256" r="80" fill="none" stroke="#c0b8a8" stroke-width="6" opacity="0.1"/>
+  <circle cx="256" cy="256" r="115" fill="none" stroke="#60a0d0" stroke-width="6" opacity="0.1"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#5cb85c" stroke-width="6" opacity="0.1"/>
+  <circle cx="256" cy="256" r="185" fill="none" stroke="#e05040" stroke-width="6" opacity="0.1"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#c08040" stroke-width="6" opacity="0.1"/>
 
-  <!-- Middle ring — mackinawite (catalyst) -->
-  <circle cx="256" cy="256" r="148" fill="none" stroke="url(#mack)" stroke-width="24" opacity="0.85"/>
+  <!-- Sun core with strong glow -->
+  <circle cx="256" cy="256" r="50" fill="#d4a04a" opacity="0.08"/>
+  <circle cx="256" cy="256" r="38" fill="#f0c060" opacity="0.15"/>
+  <circle cx="256" cy="256" r="28" fill="url(#core)" opacity="0.95"/>
 
-  <!-- Inner glow — autocatalytic core -->
-  <circle cx="256" cy="256" r="100" fill="url(#core)" opacity="0.15"/>
-  <circle cx="256" cy="256" r="70" fill="url(#core)" opacity="0.25"/>
-  <circle cx="256" cy="256" r="40" fill="url(#core)" opacity="0.9"/>
+  <!-- "E" — prominent, with glow behind -->
+  <text x="256" y="266" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#0a0e17" opacity="0.5">E</text>
+  <text x="256" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#fff8e0" opacity="0.95">E</text>
 
-  <!-- Flow arrows — electron/proton paths (stylized dots) -->
-  <!-- Top arc -->
-  <circle cx="256" cy="44" r="6" fill="#d4a04a" opacity="0.7"/>
-  <circle cx="310" cy="52" r="4" fill="#d4a04a" opacity="0.5"/>
-  <circle cx="202" cy="52" r="4" fill="#d4a04a" opacity="0.5"/>
+  <!-- Mercury — orbit r=80, angle 250° -->
+  <circle cx="229" cy="331" r="6" fill="url(#mercury)" opacity="0.95"/>
+  <circle cx="229" cy="331" r="9" fill="#c0b8a8" opacity="0.1"/>
 
-  <!-- Bottom arc -->
-  <circle cx="256" cy="468" r="6" fill="#d4a04a" opacity="0.7"/>
-  <circle cx="310" cy="460" r="4" fill="#d4a04a" opacity="0.5"/>
-  <circle cx="202" cy="460" r="4" fill="#d4a04a" opacity="0.5"/>
+  <!-- Venus — orbit r=115, angle 45° -->
+  <circle cx="337" cy="175" r="10" fill="url(#venus)" opacity="0.95"/>
+  <circle cx="337" cy="175" r="14" fill="#60a0d0" opacity="0.1"/>
 
-  <!-- Left arc -->
-  <circle cx="44" cy="256" r="6" fill="#4a7a6b" opacity="0.7"/>
-  <circle cx="52" cy="202" r="4" fill="#4a7a6b" opacity="0.5"/>
-  <circle cx="52" cy="310" r="4" fill="#4a7a6b" opacity="0.5"/>
+  <!-- Earth — orbit r=150, angle 160° -->
+  <circle cx="115" cy="205" r="11" fill="url(#earth)" opacity="0.95"/>
+  <circle cx="115" cy="205" r="15" fill="#5cb85c" opacity="0.1"/>
 
-  <!-- Right arc -->
-  <circle cx="468" cy="256" r="6" fill="#4a7a6b" opacity="0.7"/>
-  <circle cx="460" cy="202" r="4" fill="#4a7a6b" opacity="0.5"/>
-  <circle cx="460" cy="310" r="4" fill="#4a7a6b" opacity="0.5"/>
+  <!-- Mars — orbit r=185, angle 320° -->
+  <circle cx="398" cy="137" r="9" fill="url(#mars)" opacity="0.95"/>
+  <circle cx="398" cy="137" r="13" fill="#e05040" opacity="0.1"/>
 
-  <!-- Center symbol — stylized "E" for Exopoiesis -->
-  <text x="256" y="272" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="#d4a04a" opacity="0.95">E</text>
+  <!-- Jupiter — orbit r=220, angle 200° -->
+  <circle cx="49" cy="331" r="16" fill="url(#jupiter)" opacity="0.95"/>
+  <circle cx="49" cy="331" r="22" fill="#e0b070" opacity="0.08"/>
+  <!-- Jupiter band -->
+  <ellipse cx="49" cy="333" rx="14" ry="2" fill="#906030" opacity="0.3"/>
 </svg>
