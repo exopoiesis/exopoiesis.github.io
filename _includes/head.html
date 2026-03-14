@@ -1,0 +1,141 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title -->
+<title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — Self-Maintaining Inorganic Systems{% endif %}</title>
+
+<!-- Description -->
+{% if page.description %}
+  {% assign meta_desc = page.description %}
+{% elsif page.subtitle %}
+  {% assign meta_desc = page.subtitle %}
+{% elsif page.excerpt %}
+  {% assign meta_desc = page.excerpt | strip_html | truncatewords: 30 %}
+{% else %}
+  {% assign meta_desc = site.description %}
+{% endif %}
+<meta name="description" content="{{ meta_desc }}">
+<meta name="author" content="{{ site.author }}">
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- Hreflang for multilingual SEO -->
+{% if page.home %}
+  {% for l in site.languages %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ site.url }}/{{ l }}/">
+  {% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/">
+{% elsif page.url contains '/blog/' and page.url != '/en/blog/' and page.url != '/ru/blog/' and page.url != '/zh/blog/' %}
+  {%- comment -%}Individual posts: link to blog listings in other langs{%- endcomment -%}
+  {% for l in site.languages %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ site.url }}/{{ l }}/blog/">
+  {% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/blog/">
+{% elsif page.ref %}
+  {%- comment -%}Pages with ref field: find matching translations{%- endcomment -%}
+  {% assign translations = site.pages | where: "ref", page.ref %}
+  {% for t_page in translations %}
+<link rel="alternate" hreflang="{{ t_page.lang }}" href="{{ t_page.url | absolute_url }}">
+  {% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en/">
+{% else %}
+  {%- comment -%}Listing pages: construct equivalent URLs{%- endcomment -%}
+  {% assign path_without_lang = page.url | remove: '/en' | remove: '/ru' | remove: '/zh' %}
+  {% for l in site.languages %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ site.url }}/{{ l }}{{ path_without_lang }}">
+  {% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/en{{ path_without_lang }}">
+{% endif %}
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ meta_desc }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:locale" content="{% if lang == 'ru' %}ru_RU{% elsif lang == 'zh' %}zh_CN{% else %}en_US{% endif %}">
+{% if page.layout == 'post' %}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta property="article:author" content="{{ site.author }}">
+{% else %}
+<meta property="og:type" content="website">
+{% endif %}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ meta_desc }}">
+
+<!-- JSON-LD Structured Data -->
+{% if page.home %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchProject",
+  "name": "Third Matter / Exopoiesis",
+  "description": "{{ site.description | strip_newlines }}",
+  "url": "{{ site.url }}",
+  "founder": {
+    "@type": "Person",
+    "name": "Igor Morozov",
+    "email": "igor@exopoiesis.space",
+    "jobTitle": "Independent Researcher",
+    "nationality": "Ukrainian"
+  },
+  "keywords": ["self-maintaining systems", "iron sulfide", "pentlandite", "mackinawite", "autopoiesis", "origin of life", "inorganic chemistry", "electrochemistry", "third matter"],
+  "inLanguage": ["en", "ru", "zh"],
+  "sameAs": ["https://github.com/exopoiesis"]
+}
+</script>
+{% elsif page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | xml_escape }}",
+  "description": "{{ meta_desc | xml_escape }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "Igor Morozov"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Exopoiesis Research",
+    "url": "{{ site.url }}"
+  },
+  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  "inLanguage": "{{ lang }}"
+}
+</script>
+{% elsif page.layout == 'vision' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | xml_escape }}",
+  "description": "{{ meta_desc | xml_escape }}",
+  "author": {
+    "@type": "Person",
+    "name": "Igor Morozov"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Exopoiesis Research",
+    "url": "{{ site.url }}"
+  },
+  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  "inLanguage": "{{ lang }}"
+}
+</script>
+{% endif %}
+
+<!-- Preconnect -->
+<link rel="dns-prefetch" href="//github.com">
+
+<!-- Styles -->
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">

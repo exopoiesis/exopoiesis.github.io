@@ -1,0 +1,35 @@
+{% assign lang = page.lang | default: site.default_lang %}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  {% include head.html %}
+  <script>
+    (function(){
+      var t=localStorage.getItem('theme');
+      if(!t){t=window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'}
+      document.documentElement.setAttribute('data-theme',t);
+      var l=localStorage.getItem('lang');
+      if(l&&location.pathname==='/'){location.replace('/'+l+'/')}
+      else if(l&&location.pathname==='/index.html'){location.replace('/'+l+'/')}
+      else if(!l&&location.pathname.match(/^\/(en|ru|zh)\//)){localStorage.setItem('lang',location.pathname.split('/')[1])}
+    })();
+    function toggleTheme(){var h=document.documentElement;var t=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',t);localStorage.setItem('theme',t);document.querySelectorAll('.theme-icon').forEach(function(e){e.textContent=t==='dark'?'☀':'☾'})}
+    document.addEventListener('DOMContentLoaded',function(){
+      var t=document.documentElement.getAttribute('data-theme');
+      document.querySelectorAll('.theme-icon').forEach(function(e){e.textContent=t==='dark'?'☀':'☾'});
+      document.querySelectorAll('.lang-link').forEach(function(a){a.addEventListener('click',function(){var m=this.href.match(/\/(en|ru|zh)\//);if(m)localStorage.setItem('lang',m[1])})});
+    });
+  </script>
+</head>
+<body{% if page.home %} class="is-home"{% endif %}>
+
+  {% unless page.home %}
+    {% include nav.html %}
+  {% endunless %}
+
+  {{ content }}
+
+  {% include footer.html %}
+
+</body>
+</html>

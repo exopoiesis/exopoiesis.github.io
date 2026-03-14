@@ -1,0 +1,38 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="{{ '/' | append: lang | append: '/' | relative_url }}" class="nav-brand">Third Matter</a>
+    <div class="nav-links">
+      <a href="{{ '/' | append: lang | append: '/' | relative_url }}"{% if page.home %} class="active"{% endif %}>{{ t.home }}</a>
+      <a href="{{ '/' | append: lang | append: '/blog/' | relative_url }}"{% if page.url contains '/blog' %} class="active"{% endif %}>{{ t.blog }}</a>
+      <a href="{{ '/' | append: lang | append: '/visions/' | relative_url }}"{% if page.url contains '/visions' %} class="active"{% endif %}>{{ t.visions }}</a>
+      <span class="lang-switch">
+        {%- for l in site.languages -%}
+          {%- unless l == lang -%}
+            {%- if page.ref -%}
+              {%- assign target_url = nil -%}
+              {%- for doc in site.documents -%}
+                {%- if doc.ref == page.ref and doc.lang == l -%}
+                  {%- assign target_url = doc.url -%}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if target_url -%}
+                <a href="{{ target_url | relative_url }}" class="lang-link">{{ site.data.i18n[l].lang_name }}</a>
+              {%- else -%}
+                <a href="{{ '/' | append: l | append: '/' | relative_url }}" class="lang-link">{{ site.data.i18n[l].lang_name }}</a>
+              {%- endif -%}
+            {%- else -%}
+              {%- assign path_tail = page.url | split: lang | last -%}
+              <a href="{{ '/' | append: l | append: path_tail | relative_url }}" class="lang-link">{{ site.data.i18n[l].lang_name }}</a>
+            {%- endif -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      </span>
+      <button class="theme-toggle" aria-label="Toggle theme" onclick="toggleTheme()">
+        <span class="theme-icon"></span>
+      </button>
+    </div>
+  </div>
+</nav>

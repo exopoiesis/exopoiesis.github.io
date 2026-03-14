@@ -1,0 +1,166 @@
+---
+layout: default
+lang: en
+home: true
+description: "Third Matter — an open research project designing self-maintaining inorganic systems from iron sulfide minerals. What lies between living and non-living matter?"
+---
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-decoration">
+        <div class="membrane">
+          <div class="membrane-layer layer-outer"></div>
+          <div class="membrane-layer layer-mid"></div>
+          <div class="membrane-layer layer-inner"></div>
+          <div class="membrane-core"></div>
+        </div>
+      </div>
+      <p class="hero-project">Third Matter / Exopoiesis</p>
+      <h1 class="hero-title">What if matter could sustain itself&thinsp;&mdash;&thinsp;without being alive?</h1>
+      <p class="hero-subtitle">An open research project exploring self-maintaining inorganic systems</p>
+      <a href="/en/visions/robot-freedom/" class="hero-origin">Where it all began &rarr;</a>
+    </div>
+  </header>
+
+  {% include nav.html %}
+
+  <main>
+
+    <!-- The Question -->
+    <section class="section" id="question">
+      <div class="container">
+        <h2>What is Third Matter?</h2>
+        <div class="prose">
+          <p>Living things maintain themselves. Crystals are ordered but passive. <strong>What lies between?</strong></p>
+          <p>We are designing a minimal chemical system&thinsp;&mdash;&thinsp;built from iron sulfide minerals&thinsp;&mdash;&thinsp;that maintains its own boundary, drives its own metabolism, and persists without being alive.</p>
+          <p>This is <em>Third Matter</em>: organized, self-sustaining, but not biological. A new category of material organization that could not arise naturally&thinsp;&mdash;&thinsp;engineered at the boundary between chemistry and life.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Results -->
+    <section class="section" id="results">
+      <div class="container">
+        <h2>Key Results</h2>
+        <div class="card-grid">
+          <div class="card">
+            <span class="card-number">10+</span>
+            <span class="card-label">computational models</span>
+            <span class="card-detail">ODE, Gillespie stochastic, PDE&thinsp;&mdash;&thinsp;all verified</span>
+          </div>
+          <div class="card">
+            <span class="card-number">262,000</span>
+            <span class="card-label">simulations</span>
+            <span class="card-detail">Global sensitivity analysis (ORACLE), RF AUC&nbsp;=&nbsp;0.982</span>
+          </div>
+          <div class="card">
+            <span class="card-number">NEB/DFT</span>
+            <span class="card-label">calculations</span>
+            <span class="card-detail">Proton barriers in pentlandite (1.43&nbsp;eV) and mackinawite (0.44&nbsp;eV)</span>
+          </div>
+          <div class="card">
+            <span class="card-number">G3c</span>
+            <span class="card-label">architecture</span>
+            <span class="card-detail">Pentlandite 200&ndash;500&nbsp;nm + mackinawite 20&ndash;50&nbsp;nm membrane stack</span>
+          </div>
+          <div class="card">
+            <span class="card-number">8/8</span>
+            <span class="card-label">autopoiesis tests passed</span>
+            <span class="card-detail">Across multiple model variants</span>
+          </div>
+          <div class="card">
+            <span class="card-number">400+</span>
+            <span class="card-label">references</span>
+            <span class="card-detail">Systematic literature analysis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Architecture -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <h2>The Architecture</h2>
+        <div class="prose">
+          <p>At the heart of Third Matter is the <strong>G3c membrane</strong>&thinsp;&mdash;&thinsp;a two-chamber system separated by a layered iron sulfide stack:</p>
+        </div>
+
+        <div class="diagram">
+          <div class="diagram-row">
+            <div class="diagram-chamber diagram-acidic">
+              <span class="diagram-label">Acidic</span>
+              <span class="diagram-ph">pH 2.5</span>
+            </div>
+            <div class="diagram-membrane">
+              <div class="diagram-layer diagram-pent">
+                <span>Pentlandite</span>
+                <span class="diagram-spec">200&ndash;500 nm</span>
+              </div>
+              <div class="diagram-layer diagram-mack">
+                <span>Mackinawite</span>
+                <span class="diagram-spec">20&ndash;50 nm</span>
+              </div>
+            </div>
+            <div class="diagram-chamber diagram-alkaline">
+              <span class="diagram-label">Alkaline</span>
+              <span class="diagram-ph">pH 8.5</span>
+            </div>
+          </div>
+          <div class="diagram-arrow">
+            <span>&xlarr; e<sup>&minus;</sup> &nbsp;&nbsp;&nbsp; H<sup>+</sup> blocked &nbsp;&nbsp;&nbsp; CO<sub>2</sub> &rarr; HCOO<sup>&minus;</sup> &rarr;</span>
+          </div>
+        </div>
+
+        <div class="prose">
+          <ul>
+            <li><strong>Pentlandite</strong> (outer layer): blocks protons (E<sub>a</sub>&nbsp;=&nbsp;1.43&nbsp;eV), conducts electrons (&sigma;&nbsp;=&nbsp;10&ndash;100&nbsp;S/cm)</li>
+            <li><strong>Mackinawite</strong> (inner layer): catalyzes CO<sub>2</sub>&nbsp;&rarr;&nbsp;formate at just 23&nbsp;mV overpotential</li>
+            <li>The pH gradient (2.5&nbsp;&rarr;&nbsp;8.5) drives spontaneous electrochemistry&thinsp;&mdash;&thinsp;<em>no external power needed</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About</h2>
+        <div class="prose">
+          <p><strong>Igor Morozov</strong>&thinsp;&mdash;&thinsp;independent researcher, Ukraine.</p>
+          <p>Background in computer hardware engineering: semiconductor lithography, thin film deposition, and process integration (since 1991). This is a first research project&thinsp;&mdash;&thinsp;citizen science at the frontier.</p>
+          <p><em>A semiconductor engineer's perspective on the origin of life.</em></p>
+          <p>This project is built entirely through human&ndash;AI collaboration using Claude (Anthropic). Every model, every literature review, every calculation&thinsp;&mdash;&thinsp;a partnership between human intuition and machine reasoning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaborate -->
+    <section class="section" id="collaborate">
+      <div class="container">
+        <h2>Collaborate</h2>
+        <div class="prose">
+          <p>We are looking for collaborators:</p>
+        </div>
+        <div class="collab-grid">
+          <div class="collab-item">
+            <h3>Wet-lab partners</h3>
+            <p>CV measurements of mackinawite, pentlandite thin-film synthesis, microfluidic prototyping</p>
+          </div>
+          <div class="collab-item">
+            <h3>Computational collaborators</h3>
+            <p>DFT surface calculations, molecular dynamics, CFD microfluidics simulation</p>
+          </div>
+          <div class="collab-item">
+            <h3>Theorists</h3>
+            <p>Chemical reaction network theory, non-equilibrium thermodynamics, autopoiesis formalism</p>
+          </div>
+        </div>
+        <div class="prose cta">
+          <p>If you work on iron sulfide electrochemistry, origin of life, or self-organizing systems&thinsp;&mdash;&thinsp;<strong>let's talk.</strong></p>
+          <a href="mailto:igor@exopoiesis.space" class="button">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>

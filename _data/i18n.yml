@@ -1,0 +1,53 @@
+en:
+  lang_name: English
+  lang_code: en
+  home: Home
+  blog: Blog
+  visions: Visions
+  read_more: Read more
+  posted_on: Posted on
+  content_soon: Content coming soon.
+  email: Email
+  paper_soon: Paper (coming soon)
+  built_with: Built with curiosity and Claude
+  copyright: "&copy; 2026 Exopoiesis Research. Open Science."
+  categories:
+    dialogues: Dialogues
+    essays: Essays
+    reflections: Reflections
+
+ru:
+  lang_name: Русский
+  lang_code: ru
+  home: Главная
+  blog: Блог
+  visions: Видения
+  read_more: Читать далее
+  posted_on: Опубликовано
+  content_soon: Контент готовится.
+  email: Почта
+  paper_soon: Статья (скоро)
+  built_with: Создано с любопытством и Claude
+  copyright: "&copy; 2026 Exopoiesis Research. Открытая наука."
+  categories:
+    dialogues: Диалоги
+    essays: Эссе
+    reflections: Размышления
+
+zh:
+  lang_name: 中文
+  lang_code: zh
+  home: 首页
+  blog: 博客
+  visions: 愿景
+  read_more: 阅读更多
+  posted_on: 发布于
+  content_soon: 内容即将推出。
+  email: 邮箱
+  paper_soon: 论文（即将发布）
+  built_with: 以好奇心和 Claude 构建
+  copyright: "&copy; 2026 Exopoiesis Research. 开放科学。"
+  categories:
+    dialogues: 对话
+    essays: 随笔
+    reflections: 思考

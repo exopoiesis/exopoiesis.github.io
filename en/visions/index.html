@@ -1,0 +1,34 @@
+---
+layout: default
+lang: en
+title: Visions
+---
+<main class="listing">
+  <div class="container">
+    <h1>Visions</h1>
+    {% assign t = site.data.i18n.en %}
+    {% assign visions = site.visions | where: "lang", "en" %}
+    {% if visions.size > 0 %}
+      {% assign cats = visions | map: "category" | uniq %}
+      {% for cat in cats %}
+      <div class="vision-category">
+        <h2>{{ t.categories[cat] | default: cat }}</h2>
+        <ul class="vision-list">
+          {% assign cat_visions = visions | where: "category", cat %}
+          {% for vision in cat_visions %}
+          <li>
+            <a href="{{ vision.url | relative_url }}">
+              <h2>{{ vision.title }}</h2>
+              {% if vision.subtitle %}<p class="subtitle">{{ vision.subtitle }}</p>{% endif %}
+              {% if vision.date_label %}<time>{{ vision.date_label }}</time>{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    {% else %}
+    <p class="empty-state">{{ t.content_soon }}</p>
+    {% endif %}
+  </div>
+</main>

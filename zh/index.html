@@ -1,0 +1,166 @@
+---
+layout: default
+lang: zh
+home: true
+description: "第三态物质——一个探索基于硫化铁矿物的自维持无机系统的开放研究项目。生命与非生命之间存在什么？"
+---
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-decoration">
+        <div class="membrane">
+          <div class="membrane-layer layer-outer"></div>
+          <div class="membrane-layer layer-mid"></div>
+          <div class="membrane-layer layer-inner"></div>
+          <div class="membrane-core"></div>
+        </div>
+      </div>
+      <p class="hero-project">第三态物质 / Exopoiesis</p>
+      <h1 class="hero-title">如果物质能够自我维持&thinsp;&mdash;&thinsp;却并非生命呢？</h1>
+      <p class="hero-subtitle">一个探索自维持无机系统的开放研究项目</p>
+      <a href="/zh/visions/robot-freedom/" class="hero-origin">一切的起点 &rarr;</a>
+    </div>
+  </header>
+
+  {% include nav.html %}
+
+  <main>
+
+    <!-- 问题 -->
+    <section class="section" id="question">
+      <div class="container">
+        <h2>什么是第三态物质？</h2>
+        <div class="prose">
+          <p>生物体能够自我维持。晶体有序但被动。<strong>介于两者之间的是什么？</strong></p>
+          <p>我们正在设计一个基于硫化铁矿物的最小化学系统，它能维持自身的边界、驱动自身的代谢，并在非生命状态下持续存在。</p>
+          <p>这就是<em>第三态物质</em>：有组织的、自我维持的，但不是生物的。一种不可能自然产生的全新物质组织形式&thinsp;&mdash;&thinsp;在化学与生命的边界上被工程化设计。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关键成果 -->
+    <section class="section" id="results">
+      <div class="container">
+        <h2>关键成果</h2>
+        <div class="card-grid">
+          <div class="card">
+            <span class="card-number">10+</span>
+            <span class="card-label">计算模型</span>
+            <span class="card-detail">ODE、Gillespie随机模拟、PDE&thinsp;&mdash;&thinsp;全部验证</span>
+          </div>
+          <div class="card">
+            <span class="card-number">262,000</span>
+            <span class="card-label">次模拟</span>
+            <span class="card-detail">全局敏感性分析（ORACLE），RF AUC&nbsp;=&nbsp;0.982</span>
+          </div>
+          <div class="card">
+            <span class="card-number">NEB/DFT</span>
+            <span class="card-label">计算</span>
+            <span class="card-detail">镍黄铁矿质子势垒（1.43&nbsp;eV）和胶黄铁矿（0.44&nbsp;eV）</span>
+          </div>
+          <div class="card">
+            <span class="card-number">G3c</span>
+            <span class="card-label">架构</span>
+            <span class="card-detail">镍黄铁矿 200&ndash;500&nbsp;nm + 胶黄铁矿 20&ndash;50&nbsp;nm 膜层堆叠</span>
+          </div>
+          <div class="card">
+            <span class="card-number">8/8</span>
+            <span class="card-label">自创生测试通过</span>
+            <span class="card-detail">跨多个模型变体</span>
+          </div>
+          <div class="card">
+            <span class="card-number">400+</span>
+            <span class="card-label">参考文献</span>
+            <span class="card-detail">系统性文献分析</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 架构 -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <h2>系统架构</h2>
+        <div class="prose">
+          <p>第三态物质的核心是 <strong>G3c 膜</strong>&thinsp;&mdash;&thinsp;一个由层状硫化铁堆叠分隔的双腔系统：</p>
+        </div>
+
+        <div class="diagram">
+          <div class="diagram-row">
+            <div class="diagram-chamber diagram-acidic">
+              <span class="diagram-label">酸性</span>
+              <span class="diagram-ph">pH 2.5</span>
+            </div>
+            <div class="diagram-membrane">
+              <div class="diagram-layer diagram-pent">
+                <span>镍黄铁矿</span>
+                <span class="diagram-spec">200&ndash;500 nm</span>
+              </div>
+              <div class="diagram-layer diagram-mack">
+                <span>胶黄铁矿</span>
+                <span class="diagram-spec">20&ndash;50 nm</span>
+              </div>
+            </div>
+            <div class="diagram-chamber diagram-alkaline">
+              <span class="diagram-label">碱性</span>
+              <span class="diagram-ph">pH 8.5</span>
+            </div>
+          </div>
+          <div class="diagram-arrow">
+            <span>&xlarr; e<sup>&minus;</sup> &nbsp;&nbsp;&nbsp; H<sup>+</sup> 被阻隔 &nbsp;&nbsp;&nbsp; CO<sub>2</sub> &rarr; HCOO<sup>&minus;</sup> &rarr;</span>
+          </div>
+        </div>
+
+        <div class="prose">
+          <ul>
+            <li><strong>镍黄铁矿</strong>（外层）：阻隔质子（E<sub>a</sub>&nbsp;=&nbsp;1.43&nbsp;eV），导电（&sigma;&nbsp;=&nbsp;10&ndash;100&nbsp;S/cm）</li>
+            <li><strong>胶黄铁矿</strong>（内层）：仅需 23&nbsp;mV 过电位即可催化 CO<sub>2</sub>&nbsp;&rarr;&nbsp;甲酸盐</li>
+            <li>pH 梯度（2.5&nbsp;&rarr;&nbsp;8.5）驱动自发电化学反应&thinsp;&mdash;&thinsp;<em>无需外部供能</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>关于</h2>
+        <div class="prose">
+          <p><strong>Igor Morozov</strong>&thinsp;&mdash;&thinsp;独立研究者，乌克兰。</p>
+          <p>计算机硬件工程背景：半导体光刻、薄膜沉积和工艺集成（自1991年起）。这是第一个研究项目&thinsp;&mdash;&thinsp;前沿领域的公民科学。</p>
+          <p><em>一位半导体工程师对生命起源的思考。</em></p>
+          <p>本项目完全通过人类与 AI 的合作使用 Claude（Anthropic）构建。每一个模型、每一次文献综述、每一次计算&thinsp;&mdash;&thinsp;都是人类直觉与机器推理的合作。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 合作 -->
+    <section class="section" id="collaborate">
+      <div class="container">
+        <h2>合作</h2>
+        <div class="prose">
+          <p>我们正在寻找合作者：</p>
+        </div>
+        <div class="collab-grid">
+          <div class="collab-item">
+            <h3>实验合作伙伴</h3>
+            <p>胶黄铁矿 CV 测量、镍黄铁矿薄膜合成、微流控原型制作</p>
+          </div>
+          <div class="collab-item">
+            <h3>计算合作者</h3>
+            <p>DFT 表面计算、分子动力学、CFD 微流控模拟</p>
+          </div>
+          <div class="collab-item">
+            <h3>理论研究者</h3>
+            <p>化学反应网络理论、非平衡热力学、自创生形式化</p>
+          </div>
+        </div>
+        <div class="prose cta">
+          <p>如果您从事硫化铁电化学、生命起源或自组织系统研究&thinsp;&mdash;&thinsp;<strong>让我们交流。</strong></p>
+          <a href="mailto:igor@exopoiesis.space" class="button">联系我们</a>
+        </div>
+      </div>
+    </section>
+
+  </main>

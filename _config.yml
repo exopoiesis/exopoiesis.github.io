@@ -1,0 +1,33 @@
+title: Third Matter / Exopoiesis
+description: >-
+  An open research project exploring self-maintaining inorganic systems
+  built from iron sulfide minerals. What lies between living and non-living matter?
+url: https://exopoiesis.space
+author: Igor Morozov
+email: igor@exopoiesis.space
+github_username: exopoiesis
+
+languages: [en, ru, zh]
+default_lang: en
+
+permalink: /:categories/blog/:year-:month-:day-:title/
+
+collections:
+  visions:
+    output: true
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "visions"
+    values:
+      layout: vision

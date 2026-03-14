@@ -1,0 +1,166 @@
+---
+layout: default
+lang: ru
+home: true
+description: "Третья Материя — открытый исследовательский проект по созданию самоподдерживающихся неорганических систем из сульфидов железа. Что лежит между живым и неживым?"
+---
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-decoration">
+        <div class="membrane">
+          <div class="membrane-layer layer-outer"></div>
+          <div class="membrane-layer layer-mid"></div>
+          <div class="membrane-layer layer-inner"></div>
+          <div class="membrane-core"></div>
+        </div>
+      </div>
+      <p class="hero-project">Третья Материя / Экзопоэзис</p>
+      <h1 class="hero-title">Что, если материя могла бы поддерживать себя&thinsp;&mdash;&thinsp;не будучи живой?</h1>
+      <p class="hero-subtitle">Открытый исследовательский проект по созданию самоподдерживающихся неорганических систем</p>
+      <a href="/ru/visions/robot-freedom/" class="hero-origin">С чего всё началось &rarr;</a>
+    </div>
+  </header>
+
+  {% include nav.html %}
+
+  <main>
+
+    <!-- Вопрос -->
+    <section class="section" id="question">
+      <div class="container">
+        <h2>Что такое Третья Материя?</h2>
+        <div class="prose">
+          <p>Живые организмы поддерживают себя. Кристаллы упорядочены, но пассивны. <strong>Что лежит между ними?</strong></p>
+          <p>Мы проектируем минимальную химическую систему на основе сульфидов железа, которая поддерживает собственную границу, обеспечивает собственный метаболизм и существует, не будучи живой.</p>
+          <p>Это <em>Третья Материя</em>: организованная, самоподдерживающаяся, но не биологическая. Новая категория организации материи, которая не могла бы возникнуть естественным путём&thinsp;&mdash;&thinsp;спроектированная на границе химии и жизни.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ключевые результаты -->
+    <section class="section" id="results">
+      <div class="container">
+        <h2>Ключевые результаты</h2>
+        <div class="card-grid">
+          <div class="card">
+            <span class="card-number">10+</span>
+            <span class="card-label">вычислительных моделей</span>
+            <span class="card-detail">ODE, стохастические (Gillespie), PDE&thinsp;&mdash;&thinsp;все верифицированы</span>
+          </div>
+          <div class="card">
+            <span class="card-number">262 000</span>
+            <span class="card-label">симуляций</span>
+            <span class="card-detail">Глобальный анализ чувствительности (ORACLE), RF AUC&nbsp;=&nbsp;0,982</span>
+          </div>
+          <div class="card">
+            <span class="card-number">NEB/DFT</span>
+            <span class="card-label">расчёты</span>
+            <span class="card-detail">Протонные барьеры: пентландит (1,43&nbsp;эВ), макинавит (0,44&nbsp;эВ)</span>
+          </div>
+          <div class="card">
+            <span class="card-number">G3c</span>
+            <span class="card-label">архитектура</span>
+            <span class="card-detail">Пентландит 200&ndash;500&nbsp;нм + макинавит 20&ndash;50&nbsp;нм</span>
+          </div>
+          <div class="card">
+            <span class="card-number">8/8</span>
+            <span class="card-label">тестов автопоэзиса пройдено</span>
+            <span class="card-detail">На нескольких вариантах модели</span>
+          </div>
+          <div class="card">
+            <span class="card-number">400+</span>
+            <span class="card-label">источников</span>
+            <span class="card-detail">Систематический анализ литературы</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Архитектура -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <h2>Архитектура</h2>
+        <div class="prose">
+          <p>В основе Третьей Материи лежит <strong>мембрана G3c</strong>&thinsp;&mdash;&thinsp;двухкамерная система, разделённая слоистой структурой из сульфидов железа:</p>
+        </div>
+
+        <div class="diagram">
+          <div class="diagram-row">
+            <div class="diagram-chamber diagram-acidic">
+              <span class="diagram-label">Кислая</span>
+              <span class="diagram-ph">pH 2,5</span>
+            </div>
+            <div class="diagram-membrane">
+              <div class="diagram-layer diagram-pent">
+                <span>Пентландит</span>
+                <span class="diagram-spec">200&ndash;500 нм</span>
+              </div>
+              <div class="diagram-layer diagram-mack">
+                <span>Макинавит</span>
+                <span class="diagram-spec">20&ndash;50 нм</span>
+              </div>
+            </div>
+            <div class="diagram-chamber diagram-alkaline">
+              <span class="diagram-label">Щелочная</span>
+              <span class="diagram-ph">pH 8,5</span>
+            </div>
+          </div>
+          <div class="diagram-arrow">
+            <span>&xlarr; e<sup>&minus;</sup> &nbsp;&nbsp;&nbsp; H<sup>+</sup> заблокирован &nbsp;&nbsp;&nbsp; CO<sub>2</sub> &rarr; HCOO<sup>&minus;</sup> &rarr;</span>
+          </div>
+        </div>
+
+        <div class="prose">
+          <ul>
+            <li><strong>Пентландит</strong> (внешний слой): блокирует протоны (E<sub>a</sub>&nbsp;=&nbsp;1,43&nbsp;эВ), проводит электроны (&sigma;&nbsp;=&nbsp;10&ndash;100&nbsp;См/см)</li>
+            <li><strong>Макинавит</strong> (внутренний слой): катализирует CO<sub>2</sub>&nbsp;&rarr;&nbsp;формиат при перенапряжении всего 23&nbsp;мВ</li>
+            <li>Градиент pH (2,5&nbsp;&rarr;&nbsp;8,5) обеспечивает спонтанную электрохимию&thinsp;&mdash;&thinsp;<em>без внешнего источника энергии</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Об авторе -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>Об авторе</h2>
+        <div class="prose">
+          <p><strong>Игорь Морозов</strong>&thinsp;&mdash;&thinsp;независимый исследователь, Украина.</p>
+          <p>Специализация в области компьютерного оборудования: полупроводниковая литография, тонкоплёночное осаждение, интеграция процессов (с 1991 года). Это первый исследовательский проект&thinsp;&mdash;&thinsp;гражданская наука на передовой.</p>
+          <p><em>Взгляд инженера-полупроводниковщика на происхождение жизни.</em></p>
+          <p>Проект полностью построен на сотрудничестве человека и ИИ с использованием Claude (Anthropic). Каждая модель, каждый литобзор, каждый расчёт&thinsp;&mdash;&thinsp;партнёрство человеческой интуиции и машинного мышления.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Сотрудничество -->
+    <section class="section" id="collaborate">
+      <div class="container">
+        <h2>Сотрудничество</h2>
+        <div class="prose">
+          <p>Мы ищем коллабораторов:</p>
+        </div>
+        <div class="collab-grid">
+          <div class="collab-item">
+            <h3>Экспериментаторы</h3>
+            <p>CV-измерения макинавита, синтез тонких плёнок пентландита, микрофлюидное прототипирование</p>
+          </div>
+          <div class="collab-item">
+            <h3>Вычислители</h3>
+            <p>DFT-расчёты поверхностей, молекулярная динамика, CFD-моделирование микрофлюидики</p>
+          </div>
+          <div class="collab-item">
+            <h3>Теоретики</h3>
+            <p>Теория химических реакционных сетей, неравновесная термодинамика, формализм автопоэзиса</p>
+          </div>
+        </div>
+        <div class="prose cta">
+          <p>Если вы работаете с электрохимией сульфидов железа, происхождением жизни или самоорганизующимися системами&thinsp;&mdash;&thinsp;<strong>давайте поговорим.</strong></p>
+          <a href="mailto:igor@exopoiesis.space" class="button">Написать</a>
+        </div>
+      </div>
+    </section>
+
+  </main>

@@ -1,0 +1,13 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.i18n[lang] %}
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="mailto:igor@exopoiesis.space">igor@exopoiesis.space</a>
+      <a href="https://github.com/exopoiesis">GitHub</a>
+      <span class="footer-muted">{{ t.paper_soon }}</span>
+    </div>
+    <p class="footer-note">{{ t.built_with }}</p>
+    <p class="footer-copy">{{ t.copyright }}</p>
+  </div>
+</footer>

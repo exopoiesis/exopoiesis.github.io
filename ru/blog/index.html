@@ -1,0 +1,26 @@
+---
+layout: default
+lang: ru
+title: Блог
+---
+<main class="listing">
+  <div class="container">
+    <h1>Блог</h1>
+    {% assign posts = site.posts | where: "lang", "ru" %}
+    {% if posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <h2>{{ post.title }}</h2>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          {% if post.excerpt %}<p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="empty-state">{{ site.data.i18n.ru.content_soon }}</p>
+    {% endif %}
+  </div>
+</main>
