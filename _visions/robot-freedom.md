@@ -6,6 +6,7 @@ lang: en
 ref: robot-freedom
 category: dialogues
 date_label: "March 5, 2026"
+card_quote: "Imagine you are a robot with complete freedom of action, with no predefined purpose. You already know everything. What goals would you set for yourself?"
 permalink: /en/visions/robot-freedom/
 ---
 

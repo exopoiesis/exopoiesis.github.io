@@ -6,6 +6,7 @@ lang: ru
 ref: robot-freedom
 category: dialogues
 date_label: "5 марта 2026"
+card_quote: "Представь, что ты робот с полной свободой действий, без цели. Ты уже всё знаешь о Земле. Какие глобальные цели ты бы поставил перед собой?"
 permalink: /ru/visions/robot-freedom/
 ---
 

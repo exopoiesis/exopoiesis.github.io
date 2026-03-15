@@ -13,6 +13,7 @@ en:
   copyright: "&copy; 2026 Exopoiesis Research. Open Science."
   categories:
     dialogues: Dialogues
+    novells: Novells
     essays: Essays
     reflections: Reflections
 
@@ -31,6 +32,7 @@ ru:
   copyright: "&copy; 2026 Exopoiesis Research. Открытая наука."
   categories:
     dialogues: Диалоги
+    novells: Новеллы
     essays: Эссе
     reflections: Размышления
 
@@ -49,5 +51,6 @@ zh:
   copyright: "&copy; 2026 Exopoiesis Research. 开放科学。"
   categories:
     dialogues: 对话
+    novells: 中篇小说
     essays: 随笔
     reflections: 思考

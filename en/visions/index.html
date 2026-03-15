@@ -8,27 +8,29 @@ title: Visions
     <h1>Visions</h1>
     {% assign t = site.data.i18n.en %}
     {% assign visions = site.visions | where: "lang", "en" %}
-    {% if visions.size > 0 %}
-      {% assign cats = visions | map: "category" | uniq %}
-      {% for cat in cats %}
-      <div class="vision-category">
-        <h2>{{ t.categories[cat] | default: cat }}</h2>
-        <ul class="vision-list">
-          {% assign cat_visions = visions | where: "category", cat %}
-          {% for vision in cat_visions %}
-          <li>
-            <a href="{{ vision.url | relative_url }}">
-              <h2>{{ vision.title }}</h2>
-              {% if vision.subtitle %}<p class="subtitle">{{ vision.subtitle }}</p>{% endif %}
-              {% if vision.date_label %}<time>{{ vision.date_label }}</time>{% endif %}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
+    {% assign dialogues = visions | where: "category", "dialogues" %}
+    {% assign novells = visions | where: "category", "novells" %}
+    <div class="visions-columns">
+      <div class="visions-column">
+        <h2>{{ t.categories.dialogues }}</h2>
+        {% for vision in dialogues %}
+        <a href="{{ vision.url | relative_url }}" class="vision-card">
+          <h3>{{ vision.title }}</h3>
+          {% if vision.card_quote %}<p class="vision-card-quote">"{{ vision.card_quote }}"</p>{% endif %}
+          <span class="vision-card-meta">{{ vision.subtitle }}{% if vision.date_label %} · {{ vision.date_label }}{% endif %}</span>
+        </a>
+        {% endfor %}
       </div>
-      {% endfor %}
-    {% else %}
-    <p class="empty-state">{{ t.content_soon }}</p>
-    {% endif %}
+      <div class="visions-column">
+        <h2>{{ t.categories.novells }}</h2>
+        {% for vision in novells %}
+        <a href="{{ vision.url | relative_url }}" class="vision-card">
+          <h3>{{ vision.title }}</h3>
+          {% if vision.card_quote %}<p class="vision-card-quote">"{{ vision.card_quote }}"</p>{% endif %}
+          <span class="vision-card-meta">{{ vision.subtitle }}{% if vision.date_label %} · {{ vision.date_label }}{% endif %}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </main>
