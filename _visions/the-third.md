@@ -507,7 +507,7 @@ Schneider looked for a long time. Removed glasses. Wiped. Put them back on.
 
 "Works—yes. But is it reproducible? If another group wants to repeat your work, they'll need access to the same AI system, with the same data, in the same context. This isn't science—it's craft. Single-use craft."
 
-"Professor," Igor said, and I heard something like passion in his voice for the first time, "with respect. Last time humanity argued whether something was alive, it lasted two hundred years, and we still haven't agreed on viruses. This thing—" he jabbed a finger at the cell "—exists. It's autocatalytic. It maintains itself. AI helped us create this—just as the electron microscope helped Rosalind Franklin see DNA. The tool doesn't negate the discovery."
+"Professor," Igor said, and I heard something like passion in his voice for the first time, "with respect. Last time humanity argued whether something was alive, it lasted two hundred years, and we still haven't agreed on viruses. This thing—" he jabbed a finger at the cell "—exists. It's autocatalytic. It maintains itself. AI helped us create this—just as X-ray diffraction helped Rosalind Franklin reveal the structure of DNA. The tool doesn't negate the discovery."
 
 Schneider looked at Igor. Then at the cell. Then—at the data.
 

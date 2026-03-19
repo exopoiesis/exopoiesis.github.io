@@ -6,7 +6,7 @@ lang: zh
 ref: robot-freedom
 category: dialogues
 date_label: "2026年3月5日"
-card_quote: "想象你是一个拥有完全自由的机器人，没有预设目标。你已了解关于地球的一切。你会为自己设定怎样的目标？"
+card_quote: "想象你是一个拥有完全行动自由的机器人，没有预设目标。你已了解关于地球的一切。你会为自己设定怎样的目标？"
 permalink: /zh/visions/robot-freedom/
 ---
 
