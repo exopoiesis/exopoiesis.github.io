@@ -18,14 +18,17 @@
       var t=document.documentElement.getAttribute('data-theme');
       document.querySelectorAll('.theme-icon').forEach(function(e){e.textContent=t==='dark'?'☀':'☾'});
       document.querySelectorAll('.lang-link').forEach(function(a){a.addEventListener('click',function(){var m=this.href.match(/\/(en|ru|zh)\//);if(m)localStorage.setItem('lang',m[1])})});
+      var nav=document.querySelector('.site-nav');
+      if(nav&&document.body.classList.contains('is-home')){
+        var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>40)};
+        onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+      }
     });
   </script>
 </head>
 <body{% if page.home %} class="is-home"{% endif %}>
 
-  {% unless page.home %}
-    {% include nav.html %}
-  {% endunless %}
+  {% include nav.html %}
 
   {{ content }}
 

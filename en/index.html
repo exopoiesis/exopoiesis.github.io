@@ -23,8 +23,6 @@ description: "Third Matter — an open research project designing self-maintaini
     </div>
   </header>
 
-  {% include nav.html %}
-
   <main>
 
     <!-- The Question -->
@@ -45,9 +43,29 @@ description: "Third Matter — an open research project designing self-maintaini
         <h2>Key Results</h2>
         <div class="card-grid">
           <div class="card">
-            <span class="card-number">10+</span>
-            <span class="card-label">computational models</span>
-            <span class="card-detail">ODE, Gillespie stochastic, PDE&thinsp;&mdash;&thinsp;all verified</span>
+            <span class="card-number">6</span>
+            <span class="card-label">iron sulfides, DFT proton barriers</span>
+            <span class="card-detail">Vacancy-anchored S&ndash;H hopping from 43&nbsp;meV (mackinawite) to 1.9&nbsp;eV (greigite)&thinsp;&mdash;&thinsp;a ~40&times; range</span>
+          </div>
+          <div class="card">
+            <span class="card-number">R&sup2;&nbsp;&asymp;&nbsp;0.999</span>
+            <span class="card-label">hop-distance scaling law</span>
+            <span class="card-detail">Proton-transfer barrier predicted from jump geometry across the iron-sulfide family</span>
+          </div>
+          <div class="card">
+            <span class="card-number">MACE&nbsp;vs&nbsp;DFT</span>
+            <span class="card-label">foundation MLIP benchmark</span>
+            <span class="card-detail">ML potentials (MACE, CHGNet) reproduce the kinetic trap qualitatively but disagree ~2.5&times; (&Delta;F&#8225;&nbsp;=&nbsp;0.32&ndash;0.80&nbsp;eV)</span>
+          </div>
+          <div class="card">
+            <span class="card-number">2</span>
+            <span class="card-label">papers &middot; open code &amp; data</span>
+            <span class="card-detail">Paper&nbsp;#1 submitted to Digital Discovery (RSC); Paper&nbsp;#2 in revision. Repositories public on GitHub</span>
+          </div>
+          <div class="card">
+            <span class="card-number">Lean&nbsp;4</span>
+            <span class="card-label">machine-checked theorems</span>
+            <span class="card-detail">Core kinetic-model claims formally proven; an automated gate guards against AI hallucination</span>
           </div>
           <div class="card">
             <span class="card-number">262,000</span>
@@ -55,24 +73,9 @@ description: "Third Matter — an open research project designing self-maintaini
             <span class="card-detail">Global sensitivity analysis (ORACLE), RF AUC&nbsp;=&nbsp;0.982</span>
           </div>
           <div class="card">
-            <span class="card-number">NEB/DFT</span>
-            <span class="card-label">calculations</span>
-            <span class="card-detail">Proton barriers in pentlandite (1.43&nbsp;eV) and mackinawite (0.44&nbsp;eV)</span>
-          </div>
-          <div class="card">
             <span class="card-number">G3c</span>
-            <span class="card-label">architecture</span>
-            <span class="card-detail">Pentlandite 200&ndash;500&nbsp;nm + mackinawite 20&ndash;50&nbsp;nm membrane stack</span>
-          </div>
-          <div class="card">
-            <span class="card-number">8/8</span>
-            <span class="card-label">autopoiesis tests passed</span>
-            <span class="card-detail">Across multiple model variants</span>
-          </div>
-          <div class="card">
-            <span class="card-number">400+</span>
-            <span class="card-label">references</span>
-            <span class="card-detail">Systematic literature analysis</span>
+            <span class="card-label">membrane architecture</span>
+            <span class="card-detail">Pentlandite 200&ndash;500&nbsp;nm + mackinawite 20&ndash;50&nbsp;nm two-chamber stack</span>
           </div>
         </div>
       </div>
@@ -127,9 +130,10 @@ description: "Third Matter — an open research project designing self-maintaini
       <div class="container">
         <h2>About</h2>
         <div class="prose">
-          <p><strong>Igor Morozov</strong>&thinsp;&mdash;&thinsp;independent researcher, Ukraine.</p>
-          <p>Background in computer hardware engineering: semiconductor lithography, thin film deposition, and process integration (since 1991). This is a first research project&thinsp;&mdash;&thinsp;citizen science at the frontier.</p>
-          <p><em>A semiconductor engineer's perspective on the origin of life.</em></p>
+          <p><strong>Igor Morozov</strong>&thinsp;&mdash;&thinsp;independent researcher, Ukraine.<br>
+          <a href="https://orcid.org/0009-0007-3863-1747" class="orcid-id"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 256 256" style="vertical-align:-2px"><path fill="#A6CE39" d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128z"/><path fill="#FFF" d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7C191.7 111.2 178 93 148 93h-23.7v79.4zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></svg>&nbsp;https://orcid.org/0009-0007-3863-1747</a></p>
+          <p>Graduated with distinction from <strong>Kharkiv National University of Radio Electronics</strong> (Computer Engineering; Electronics &amp; Process Engineer, 1996). His working career then went into <strong>software engineering</strong> rather than the cleanroom&thinsp;&mdash;&thinsp;and years later it was AI that became the bridge back: a way to bring that semiconductor-era grounding in thin films and layered architectures, together with a programmer's toolkit, to the mineral membranes at the heart of this project. A first research project&thinsp;&mdash;&thinsp;citizen science at the frontier.</p>
+          <p><em>A semiconductor engineer's perspective on designing life-like matter.</em></p>
           <p>This project is built entirely through human&ndash;AI collaboration using Claude (Anthropic). Every model, every literature review, every calculation&thinsp;&mdash;&thinsp;a partnership between human intuition and machine reasoning.</p>
         </div>
       </div>

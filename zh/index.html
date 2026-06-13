@@ -23,8 +23,6 @@ description: "第三态物质——一个探索基于硫化铁矿物的自维持
     </div>
   </header>
 
-  {% include nav.html %}
-
   <main>
 
     <!-- 问题 -->
@@ -45,9 +43,29 @@ description: "第三态物质——一个探索基于硫化铁矿物的自维持
         <h2>关键成果</h2>
         <div class="card-grid">
           <div class="card">
-            <span class="card-number">10+</span>
-            <span class="card-label">计算模型</span>
-            <span class="card-detail">ODE、Gillespie随机模拟、PDE&thinsp;&mdash;&thinsp;全部验证</span>
+            <span class="card-number">6</span>
+            <span class="card-label">种硫化铁，DFT质子势垒</span>
+            <span class="card-detail">空位锚定的S&ndash;H跳跃：从43&nbsp;meV（马基诺矿）到1.9&nbsp;eV（胶黄铁矿）&thinsp;&mdash;&thinsp;约40&times;跨度</span>
+          </div>
+          <div class="card">
+            <span class="card-number">R&sup2;&nbsp;&asymp;&nbsp;0.999</span>
+            <span class="card-label">跳跃距离标度律</span>
+            <span class="card-detail">可根据跳跃几何预测整个硫化铁矿物族的质子转移势垒</span>
+          </div>
+          <div class="card">
+            <span class="card-number">MACE&nbsp;vs&nbsp;DFT</span>
+            <span class="card-label">基础MLIP基准测试</span>
+            <span class="card-detail">ML势（MACE、CHGNet）定性再现动力学陷阱，但定量相差约2.5&times;（&Delta;F&#8225;&nbsp;=&nbsp;0.32&ndash;0.80&nbsp;eV）</span>
+          </div>
+          <div class="card">
+            <span class="card-number">2</span>
+            <span class="card-label">篇论文 &middot; 开放代码与数据</span>
+            <span class="card-detail">论文&nbsp;#1已投稿Digital Discovery（RSC）；论文&nbsp;#2修订中。代码库在GitHub公开</span>
+          </div>
+          <div class="card">
+            <span class="card-number">Lean&nbsp;4</span>
+            <span class="card-label">机器验证定理</span>
+            <span class="card-detail">动力学模型的核心论断经形式化证明；自动门控防范AI幻觉</span>
           </div>
           <div class="card">
             <span class="card-number">262,000</span>
@@ -55,24 +73,9 @@ description: "第三态物质——一个探索基于硫化铁矿物的自维持
             <span class="card-detail">全局敏感性分析（ORACLE），RF AUC&nbsp;=&nbsp;0.982</span>
           </div>
           <div class="card">
-            <span class="card-number">NEB/DFT</span>
-            <span class="card-label">计算</span>
-            <span class="card-detail">镍黄铁矿质子势垒（1.43&nbsp;eV）和胶黄铁矿（0.44&nbsp;eV）</span>
-          </div>
-          <div class="card">
             <span class="card-number">G3c</span>
-            <span class="card-label">架构</span>
-            <span class="card-detail">镍黄铁矿 200&ndash;500&nbsp;nm + 胶黄铁矿 20&ndash;50&nbsp;nm 膜层堆叠</span>
-          </div>
-          <div class="card">
-            <span class="card-number">8/8</span>
-            <span class="card-label">自创生测试通过</span>
-            <span class="card-detail">跨多个模型变体</span>
-          </div>
-          <div class="card">
-            <span class="card-number">400+</span>
-            <span class="card-label">参考文献</span>
-            <span class="card-detail">系统性文献分析</span>
+            <span class="card-label">膜架构</span>
+            <span class="card-detail">镍黄铁矿 200&ndash;500&nbsp;nm + 马基诺矿 20&ndash;50&nbsp;nm 双腔堆叠</span>
           </div>
         </div>
       </div>
@@ -127,9 +130,10 @@ description: "第三态物质——一个探索基于硫化铁矿物的自维持
       <div class="container">
         <h2>关于</h2>
         <div class="prose">
-          <p><strong>Igor Morozov</strong>&thinsp;&mdash;&thinsp;独立研究者，乌克兰。</p>
-          <p>计算机硬件工程背景：半导体光刻、薄膜沉积和工艺集成（自1991年起）。这是第一个研究项目&thinsp;&mdash;&thinsp;前沿领域的公民科学。</p>
-          <p><em>一位半导体工程师对生命起源的思考。</em></p>
+          <p><strong>Igor Morozov</strong>&thinsp;&mdash;&thinsp;独立研究者，乌克兰。<br>
+          <a href="https://orcid.org/0009-0007-3863-1747" class="orcid-id"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 256 256" style="vertical-align:-2px"><path fill="#A6CE39" d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128z"/><path fill="#FFF" d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7C191.7 111.2 178 93 148 93h-23.7v79.4zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></svg>&nbsp;https://orcid.org/0009-0007-3863-1747</a></p>
+          <p>以优异成绩毕业于<strong>哈尔科夫国立无线电电子大学</strong>（计算机工程；电子与工艺工程师，1996年）。此后他的职业走向了<strong>软件开发</strong>，而非洁净室&thinsp;&mdash;&thinsp;多年以后，正是 AI 成为回归的桥梁：让他把半导体时代打下的根基（薄膜、层状架构）连同程序员的工具，应用到本项目核心的矿物膜上。这是第一个研究项目&thinsp;&mdash;&thinsp;前沿领域的公民科学。</p>
+          <p><em>一位半导体工程师对构建类生命物质的思考。</em></p>
           <p>本项目完全通过人类与 AI 的合作使用 Claude（Anthropic）构建。每一个模型、每一次文献综述、每一次计算&thinsp;&mdash;&thinsp;都是人类直觉与机器推理的合作。</p>
         </div>
       </div>

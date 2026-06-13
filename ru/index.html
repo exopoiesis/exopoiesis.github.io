@@ -23,8 +23,6 @@ description: "Третья Материя — открытый исследов�
     </div>
   </header>
 
-  {% include nav.html %}
-
   <main>
 
     <!-- Вопрос -->
@@ -45,9 +43,29 @@ description: "Третья Материя — открытый исследов�
         <h2>Ключевые результаты</h2>
         <div class="card-grid">
           <div class="card">
-            <span class="card-number">10+</span>
-            <span class="card-label">вычислительных моделей</span>
-            <span class="card-detail">ODE, стохастические (Gillespie), PDE&thinsp;&mdash;&thinsp;все верифицированы</span>
+            <span class="card-number">6</span>
+            <span class="card-label">сульфидов железа, DFT-барьеры протона</span>
+            <span class="card-detail">Перенос S&ndash;H у вакансии: от 43&nbsp;meV (макинавит) до 1,9&nbsp;эВ (грейгит)&thinsp;&mdash;&thinsp;диапазон ~40&times;</span>
+          </div>
+          <div class="card">
+            <span class="card-number">R&sup2;&nbsp;&asymp;&nbsp;0,999</span>
+            <span class="card-label">закон масштабирования по длине прыжка</span>
+            <span class="card-detail">Барьер переноса протона предсказывается по геометрии прыжка для всего семейства сульфидов железа</span>
+          </div>
+          <div class="card">
+            <span class="card-number">MACE&nbsp;vs&nbsp;DFT</span>
+            <span class="card-label">бенчмарк foundation MLIP</span>
+            <span class="card-detail">ML-потенциалы (MACE, CHGNet) воспроизводят ловушку качественно, но расходятся ~2,5&times; (&Delta;F&#8225;&nbsp;=&nbsp;0,32&ndash;0,80&nbsp;эВ)</span>
+          </div>
+          <div class="card">
+            <span class="card-number">2</span>
+            <span class="card-label">статьи &middot; открытый код и данные</span>
+            <span class="card-detail">Paper&nbsp;#1 подан в Digital Discovery (RSC); Paper&nbsp;#2 в ревизии. Репозитории открыты на GitHub</span>
+          </div>
+          <div class="card">
+            <span class="card-number">Lean&nbsp;4</span>
+            <span class="card-label">machine-checked теоремы</span>
+            <span class="card-detail">Ключевые утверждения кинетической модели формально доказаны; автоматический гейт против галлюцинаций ИИ</span>
           </div>
           <div class="card">
             <span class="card-number">262 000</span>
@@ -55,24 +73,9 @@ description: "Третья Материя — открытый исследов�
             <span class="card-detail">Глобальный анализ чувствительности (ORACLE), RF AUC&nbsp;=&nbsp;0,982</span>
           </div>
           <div class="card">
-            <span class="card-number">NEB/DFT</span>
-            <span class="card-label">расчёты</span>
-            <span class="card-detail">Протонные барьеры: пентландит (1,43&nbsp;эВ), макинавит (0,44&nbsp;эВ)</span>
-          </div>
-          <div class="card">
             <span class="card-number">G3c</span>
-            <span class="card-label">архитектура</span>
-            <span class="card-detail">Пентландит 200&ndash;500&nbsp;нм + макинавит 20&ndash;50&nbsp;нм</span>
-          </div>
-          <div class="card">
-            <span class="card-number">8/8</span>
-            <span class="card-label">тестов автопоэзиса пройдено</span>
-            <span class="card-detail">На нескольких вариантах модели</span>
-          </div>
-          <div class="card">
-            <span class="card-number">400+</span>
-            <span class="card-label">источников</span>
-            <span class="card-detail">Систематический анализ литературы</span>
+            <span class="card-label">архитектура мембраны</span>
+            <span class="card-detail">Пентландит 200&ndash;500&nbsp;нм + макинавит 20&ndash;50&nbsp;нм, две камеры</span>
           </div>
         </div>
       </div>
@@ -127,9 +130,10 @@ description: "Третья Материя — открытый исследов�
       <div class="container">
         <h2>Об авторе</h2>
         <div class="prose">
-          <p><strong>Игорь Морозов</strong>&thinsp;&mdash;&thinsp;независимый исследователь, Украина.</p>
-          <p>Специализация в области компьютерного оборудования: полупроводниковая литография, тонкоплёночное осаждение, интеграция процессов (с 1991 года). Это первый исследовательский проект&thinsp;&mdash;&thinsp;гражданская наука на передовой.</p>
-          <p><em>Взгляд инженера-полупроводниковщика на происхождение жизни.</em></p>
+          <p><strong>Игорь Морозов</strong>&thinsp;&mdash;&thinsp;независимый исследователь, Украина.<br>
+          <a href="https://orcid.org/0009-0007-3863-1747" class="orcid-id"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 256 256" style="vertical-align:-2px"><path fill="#A6CE39" d="M256 128c0 70.7-57.3 128-128 128S0 198.7 0 128 57.3 0 128 0s128 57.3 128 128z"/><path fill="#FFF" d="M86.3 186.2H70.9V79.1h15.4v107.1zM108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8V79.1zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7C191.7 111.2 178 93 148 93h-23.7v79.4zM88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></svg>&nbsp;https://orcid.org/0009-0007-3863-1747</a></p>
+          <p>Окончил с отличием <strong>Харьковский национальный университет радиоэлектроники</strong> (компьютерная инженерия; инженер-электронщик и технолог, 1996). Дальше карьера ушла в <strong>программирование</strong>, а не в чистую комнату&thinsp;&mdash;&thinsp;и спустя годы именно ИИ стал мостом назад: способом приложить ту полупроводниковую базу (тонкие плёнки, слоистые архитектуры) вместе с инструментарием программиста к минеральным мембранам, на которых стоит этот проект. Первый исследовательский проект&thinsp;&mdash;&thinsp;гражданская наука на передовой.</p>
+          <p><em>Взгляд инженера-технолога на конструирование жизнеподобной материи.</em></p>
           <p>Проект полностью построен на сотрудничестве человека и ИИ с использованием Claude (Anthropic). Каждая модель, каждый литобзор, каждый расчёт&thinsp;&mdash;&thinsp;партнёрство человеческой интуиции и машинного мышления.</p>
         </div>
       </div>
