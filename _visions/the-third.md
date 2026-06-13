@@ -7,7 +7,7 @@ ref: the-third
 category: novells
 date_label: "March 15, 2026"
 permalink: /en/visions/the-third/
-cover_image: /assets/images/title.en.png
+cover_image: /assets/images/title.en.webp
 card_quote: "She spent her last energy to create this. If I don't take it now—in six months there'll just be dead rock here. ... She was saying goodbye with the only thing she knew about herself: her shape. As if a person, not knowing words, pressed their palm to glass in farewell."
 ---
 
@@ -694,5 +694,5 @@ Probably.
 ---
 
 <div style="text-align: center; margin: 3rem 0;">
-  <img src="/assets/images/humanely.authored.png" alt="Humanely Authored" style="width: 512px; max-width: 100%; height: auto; border-radius: 16px;">
+  <img src="/assets/images/humanely.authored.webp" alt="Humanely Authored" style="width: 512px; max-width: 100%; height: auto; border-radius: 16px;">
 </div>

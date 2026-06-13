@@ -7,7 +7,7 @@ ref: the-third
 category: novells
 date_label: "2026年3月15日"
 permalink: /zh/visions/the-third/
-cover_image: /assets/images/title.zh.png
+cover_image: /assets/images/title.zh.webp
 card_quote: "她花费了最后的能量来创造这个。如果我现在不拿走它——六个月后这里就只是死石头了。……她在用她唯一知道的关于自己的东西告别：她的形状。就像一个不懂言语的人，在告别时把手掌按在玻璃上。"
 ---
 
@@ -694,5 +694,5 @@ AI在四十二秒内回答了。我至今还记得那四十二秒——它们值
 ---
 
 <div style="text-align: center; margin: 3rem 0;">
-  <img src="/assets/images/humanely.authored.png" alt="Humanely Authored" style="width: 512px; max-width: 100%; height: auto; border-radius: 16px;">
+  <img src="/assets/images/humanely.authored.webp" alt="Humanely Authored" style="width: 512px; max-width: 100%; height: auto; border-radius: 16px;">
 </div>

@@ -7,7 +7,7 @@ ref: the-third
 category: novells
 date_label: "15 марта 2026"
 permalink: /ru/visions/the-third/
-cover_image: /assets/images/title.ru.png
+cover_image: /assets/images/title.ru.webp
 card_quote: "Она потратила последнюю энергию, чтобы это создать. Если я не заберу это сейчас — через полгода здесь будет просто мёртвый камень. ... Она прощалась тем единственным, что знала о себе: своей формой. Как если бы человек, не знающий слов, на прощание прижал ладонь к стеклу."
 ---
 
@@ -694,5 +694,5 @@ AI ответил за сорок две секунды. Я до сих пор �
 ---
 
 <div style="text-align: center; margin: 3rem 0;">
-  <img src="/assets/images/humanely.authored.png" alt="Humanely Authored" style="width: 512px; max-width: 100%; height: auto; border-radius: 16px;">
+  <img src="/assets/images/humanely.authored.webp" alt="Humanely Authored" style="width: 512px; max-width: 100%; height: auto; border-radius: 16px;">
 </div>
